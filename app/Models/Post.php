@@ -10,4 +10,8 @@ class Post extends Model
     use HasFactory;
     // protected $filable = ['judul','isi','excerpt'];
     protected $guarded =["id"];
+
+    public function category(){
+        return $this-> belongsTo(Category::class);
+    }
 }

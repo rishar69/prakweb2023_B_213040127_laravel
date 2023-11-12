@@ -13,7 +13,9 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
+            $table->foreignId("category_id");
             $table->string('judul');
+            $table->string('slug');
             $table->string('penulis');
             $table->text('excerpt');
             $table->text('isi');
