@@ -1,9 +1,4 @@
-@extends('layouts/main')
-
-
+@extends('layouts.main')
 @section('container')
-
-
-    <h2>ini home</h2>
-    
+<h1>Halaman Home</h1>
 @endsection

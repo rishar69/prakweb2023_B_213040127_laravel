@@ -1,5 +1,7 @@
-@extends('layouts/main')
-
+@extends('layouts.main')
 @section('container')
-    <h2>ini about</h2>
+<h1>Halaman about</h1>
+<h3>{{ $name }}</h3>
+<p>{{ $email }}</p>
+<img src="img/{{ $image }}" alt="{{ $name }}" width="200" class="image-thumbnail rounded-circle ">
 @endsection
